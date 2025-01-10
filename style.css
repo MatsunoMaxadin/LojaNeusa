@@ -1,10 +1,11 @@
 
 :root {
---cor-letra: yellow;
+--cor-letra: white;
   --cor-article: black;
   --cor-fundo: black;
   --cor-footer: darkblue;
   --cor-logo: gray;
+  --borda: solid black 2px;
   
 }
 
@@ -15,6 +16,14 @@ margin: 0;
 padding: 0;
 background-color: var(--cor-fundo);
   color: var (--cor-letra);
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  
+  
   
 }
 
@@ -33,6 +42,7 @@ text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  align-self: flex-start;
 }
 
 header h1 {
@@ -43,7 +53,11 @@ margin-bottom: 10px;
 main {
 display: flex;
 flex-direction: column;
+  justify-content: space-around;
 gap: 20px;
+  width: 80%;
+  border: var(--borda);
+  
   
 }
 
@@ -60,12 +74,7 @@ h2 {
 font-size: 24px;
 }
 
-.loja img {
-width: 100%;
-height: 150px;
-object-fit: cover;
-margin: 20px 0;
-}
+
 
 .contatos p {
 margin-bottom: 10px;
@@ -76,6 +85,7 @@ text-align: center;
 color: #666;
 font-size: 14px;
   background-color: var(--cor-footer);
+  
 }
 
 header > img {
@@ -92,7 +102,7 @@ iframe {
   width: 90%;
 }
 
-.endereço > div > img {
+.endereço > .container > img {
   
   width: 100%;
 }
@@ -108,11 +118,13 @@ iframe {
 
 .title {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   padding: 0 0 0 10px;
 }
+
+
 
 
 
@@ -137,6 +149,13 @@ iframe {
   justify-content: center;
   align-items: center;
   margin: 0px;
+  
+  
+}
+
+.catalogue > img {
+  
+  width: 400px;
   
 }
 
@@ -171,3 +190,10 @@ iframe {
 }
 
 
+.title > img {
+  
+  width: 30px;
+  
+  
+  
+}
